@@ -1,0 +1,7 @@
+.link {
+  text-decoration: none;
+}
+
+.link:focus {
+  color: var(--steam-color-2);
+}

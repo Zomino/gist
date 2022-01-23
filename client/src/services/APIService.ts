@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { serverUrl } from './environment';
-import type Game from './interfaces/Game';
-import type List from './interfaces/List';
+import { serverUrl } from '../environment';
+import type Game from '../interfaces/Game';
+import type List from '../interfaces/List';
 
 export async function getLists(): Promise<List[]> {
   const res = await axios.get(`${serverUrl}/lists`);

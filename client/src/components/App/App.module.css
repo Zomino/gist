@@ -1,0 +1,51 @@
+/* poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+
+/* reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+/* variables */
+:root {
+  --steam-color-1: #171A21;
+  --steam-color-2: #66C0F4;
+  --steam-color-3: #1B2838;
+  --steam-color-4: #2A475E;
+  --steam-color-5: #C7D5E0;
+  --font-large: 2rem;
+  --font-medium: 1.5rem;
+  --font-normal: 1.1rem;
+  --font-small: .9rem;
+}
+
+/* global styles */
+body {
+  background-color: var(--steam-color-3);
+}
+
+h1 {
+  color: var(--steam-color-5);
+  font-size: var(--font-large);
+  font-weight: 400;
+}
+
+h2 {
+  color: var(--steam-color-5);
+  font-size: var(--font-large);
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+  color: var(--steam-color-3);
+  font-size: var(--font-normal);
+}
+
+h4 {
+  color: var(--steam-color-1);
+  font-size: var(--font-normal);
+}
