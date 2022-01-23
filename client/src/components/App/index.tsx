@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Banner from '../features/Banner';
 import MyListsView from '../views/MyListsView';
+import ListView from '../views/ListView';
 
 export default function App(): JSX.Element {
   return (
@@ -14,6 +15,7 @@ export default function App(): JSX.Element {
       <Banner />
       <Routes>
         <Route path="/" element={<MyListsView />} />
+        <Route path="/list/:id" element={<ListView />} />
       </Routes>
     </Router>
   );

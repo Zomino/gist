@@ -2,7 +2,7 @@ import type Game from './Game';
 
 /* eslint-disable semi */
 export default interface List {
-  _id?: number,
+  _id?: string,
   name: string,
   steamid: number,
   games: Game[],

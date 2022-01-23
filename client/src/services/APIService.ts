@@ -8,7 +8,7 @@ export async function getLists(): Promise<List[]> {
   return res.data;
 }
 
-export async function getListById(id: number): Promise<List> {
+export async function getListById(id: string): Promise<List> {
   const res = await axios.get(`${serverUrl}/lists/${id}`);
   return res.data;
 }
@@ -26,9 +26,9 @@ export async function getOwnedGames(): Promise<Game[]> {
   return res.data;
 }
 
-export function constructImageURL(appid: number, hash: number): string {
-  return `http://media.steampowered.com/
-    steamcommunity/public/images/apps/${appid}/${hash}.jpg`;
+export function constructImageURL(appid: number, hash: string): string {
+  // eslint-disable-next-line max-len
+  return `http://media.steampowered.com/steamcommunity/public/images/apps/${appid}/${hash}.jpg`;
 }
 
 export function constructStoreURL(appid: number): string {
