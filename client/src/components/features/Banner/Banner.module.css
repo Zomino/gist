@@ -1,0 +1,20 @@
+.banner {
+  position: sticky;
+  top: 0px;
+  width: 100vw;
+  padding: 1rem 5rem;
+  background: var(--steam-color-1);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading:hover {
+  cursor: pointer;
+  color: white;
+}
