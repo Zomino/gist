@@ -8,8 +8,8 @@ export function addApiData(games: Game[], apiGames: Game[]): Game[] {
 
     return {
       ...game,
-      name: apiData?.name,
-      img_logo_url: apiData?.img_logo_url,
+      name: apiData!.name,
+      img_logo_url: apiData!.img_logo_url,
     };
   });
 }
