@@ -1,19 +1,7 @@
 import axios from 'axios';
 import { serverUrl } from './environment';
-
-interface Game {
-  appid: number,
-  name: string,
-  img_logo_url: string,
-}
-
-interface List {
-  id?: number,
-  name: string,
-  steamid: number,
-  games: Game[],
-  ordered: boolean,
-}
+import type Game from './interfaces/Game';
+import type List from './interfaces/List';
 
 export async function getLists(): Promise<List[]> {
   const res = await axios.get(`${serverUrl}/lists`);
