@@ -1,0 +1,28 @@
+.listName {
+  color: var(--steam-color-5);
+  font-size: var(--font-medium);
+  font-weight: 300;
+}
+
+.listNameSpan {
+  margin-left: .5rem;
+  color: var(--steam-color-2);
+  font-weight: 500;
+}
+
+.iconLinks {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.toolButton {
+  display: inline;
+  margin-left: .5rem;
+  color: var(--steam-color-5);
+  font-size: var(--font-large);
+}
+
+.toolButton:hover {
+  cursor: pointer;
+  color: white;
+}
