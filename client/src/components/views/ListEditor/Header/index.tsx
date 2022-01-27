@@ -1,5 +1,3 @@
-// libraries
-import React from 'react';
 // components
 import Section from '../../../containers/Section/Section';
 

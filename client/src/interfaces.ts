@@ -17,5 +17,5 @@ export interface List {
 }
 
 export interface Props {
-  children: ReactNode
+  children?: ReactNode
 }

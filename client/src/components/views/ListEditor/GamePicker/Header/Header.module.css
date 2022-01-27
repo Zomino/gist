@@ -1,0 +1,24 @@
+.header {
+  padding: 2rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  color: var(--steam-color-5);
+  font-size: var(--font-medium);
+}
+
+.doneButton {
+  padding: .1rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--steam-color-5);
+  color: var(--steam-color-3);
+  font-weight: 600;
+}
+
+.doneButton:hover {
+  background-color: var(--steam-color-2);
+  cursor: pointer;
+}

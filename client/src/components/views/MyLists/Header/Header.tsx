@@ -1,5 +1,4 @@
 // libraries
-import React from 'react';
 import { IoIosAddCircle } from 'react-icons/io';
 // components
 import Section from '../../../containers/Section/Section';

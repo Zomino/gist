@@ -1,4 +1,4 @@
-import type { List, Game } from '../../../../../interfaces';
+import { type List, type Game } from '../../../../interfaces';
 import { ActionType, type Action } from './types';
 
 export function setList(fetchedList: List): Action {
@@ -42,3 +42,12 @@ export function saveOptions(name: string, ordered: boolean): Action {
     payload: { name, ordered },
   };
 }
+
+export default {
+  setList,
+  incrementRank,
+  decrementRank,
+  removeGame,
+  addGame,
+  saveOptions,
+};

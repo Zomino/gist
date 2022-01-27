@@ -1,5 +1,3 @@
-// libraries
-import React from 'react';
 // styles
 import styles from './Section.module.css';
 // types

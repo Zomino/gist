@@ -1,6 +1,3 @@
-// libraries
-import React from 'react';
-// types
 import { type Props } from '../../../interfaces';
 
 interface ListProps extends Props { ordered: boolean }

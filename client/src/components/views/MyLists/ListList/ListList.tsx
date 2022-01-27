@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 
 // libraries
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 // components
 import ListContainer from '../../../containers/List/List';

@@ -1,5 +1,3 @@
-// libraries
-import React from 'react';
 // services
 import apiService from '../../../apiService';
 // styles

@@ -1,4 +1,4 @@
-import type { List, Game } from '../../../../../interfaces';
+import { type List, type Game } from '../../../../interfaces';
 
 export function setList(list: List, apiList: List): List {
   return {

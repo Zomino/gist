@@ -8,7 +8,7 @@ import {
   saveOptions,
 } from './handlers';
 // types
-import { type List } from '../../../../../interfaces';
+import { type List } from '../../../../interfaces';
 import { ActionType, type Action } from './types';
 
 export default function reducer(list: List, action: Action): List {

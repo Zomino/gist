@@ -1,5 +1,5 @@
 // libraries
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 // services
 import apiService from '../../../../apiService';
 // components
@@ -7,7 +7,7 @@ import ListContainer from '../../../containers/List/List';
 import ListItemContainer from '../../../containers/ListItem/ListItem';
 import GameImage from '../../../features/GameImage/GameImage';
 // types
-import type { List, Game, Props } from '../../../../interfaces';
+import { type List, type Game, type Props } from '../../../../interfaces';
 // styles
 import styles from './GameList.module.css';
 

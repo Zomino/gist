@@ -1,7 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 
 // libraries
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IoIosAddCircle } from 'react-icons/io';
 import {
@@ -15,7 +14,7 @@ import { useListEditorContext } from '../context';
 // components
 import Section from '../../../containers/Section/Section';
 // types
-import { Props } from '../../../../interfaces';
+import { type Props } from '../../../../interfaces';
 // styles
 import styles from './Toolbar.module.css';
 
@@ -50,8 +49,8 @@ export default function Toolbar(): JSX.Element | null {
 
   const {
     list,
-    toggleOptionFormOpen,
-    toggleGamePickerOpen,
+    setOptionFormOpen,
+    setGamePickerOpen,
   } = context;
 
   const saveList = async (): Promise<void> => {
@@ -67,11 +66,11 @@ export default function Toolbar(): JSX.Element | null {
   };
 
   const openOptions = (): void => {
-    toggleOptionFormOpen();
+    setOptionFormOpen(true);
   };
 
   const openGamePicker = (): void => {
-    toggleGamePickerOpen();
+    setGamePickerOpen(true);
   };
 
   return (

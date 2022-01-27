@@ -1,5 +1,5 @@
 // libraries
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 // services
 import apiService from '../../../apiService';
 // components

@@ -1,18 +1,22 @@
 // libraries
-import { createContext, useContext } from 'react';
+import {
+  createContext,
+  useContext,
+  type Dispatch,
+  type SetStateAction,
+} from 'react';
 // types
 import { type List } from '../../../interfaces';
-import { type Actions } from './state/list/types';
-import { type ToggleGamePickerOpen } from './state/gamePicker/state';
-import { type ToggleOptionFormOpen } from './state/optionForm/state';
+import { type Action, type Actions } from './state/types';
 
 interface ListEditorContext {
   list: List,
+  actions: Actions,
   gamePickerOpen: boolean,
   optionFormOpen: boolean,
-  actions: Actions,
-  toggleGamePickerOpen: ToggleGamePickerOpen,
-  toggleOptionFormOpen: ToggleOptionFormOpen,
+  dispatch: (value: Action) => void,
+  setGamePickerOpen: Dispatch<SetStateAction<boolean>>,
+  setOptionFormOpen: Dispatch<SetStateAction<boolean>>,
 }
 
 export const ListEditorContext = createContext<ListEditorContext | null>(null);

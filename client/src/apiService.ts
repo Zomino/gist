@@ -37,7 +37,7 @@ export function constructStoreURL(appid: number): string {
   return `https://store.steampowered.com/agecheck/app/${appid}/`;
 }
 
-const APIService = {
+const apiService = {
   getLists,
   getListById,
   getOwnedGames,
@@ -47,4 +47,4 @@ const APIService = {
   constructStoreURL,
 };
 
-export default APIService;
+export default apiService;

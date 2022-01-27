@@ -1,4 +1,4 @@
-import type { List, Game } from '../../../../../interfaces';
+import { type List, type Game } from '../../../../interfaces';
 
 export enum ActionType {
   setList,
@@ -24,10 +24,10 @@ export interface Action {
 }
 
 export interface Actions {
-  setList: (newList: List) => void;
-  incrementRank: (rank: number) => void;
-  decrementRank: (rank: number) => void;
-  removeGame: (appid: number) => void;
-  addGame: (game: Game) => void;
-  saveOptions: (name: string, ordered: boolean) => void;
+  setList: (fetchedList: List) => Action,
+  incrementRank: (rank: number) => Action,
+  decrementRank: (rank: number) => Action,
+  removeGame: (appid: number) => Action,
+  addGame: (game: Game) => Action,
+  saveOptions: (name: string, ordered: boolean) => Action,
 }

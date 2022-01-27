@@ -1,5 +1,4 @@
 // libraries
-import React from 'react';
 import { Oval } from 'react-loader-spinner';
 // styles
 import styles from './Spinner.module.css';

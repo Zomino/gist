@@ -1,14 +1,21 @@
-// libraries
-import React from 'react';
 // types
 import { type Props } from '../../../interfaces';
 // styles
 import styles from './ListItem.module.css';
 
-export default function ListItem({ children }: Props): JSX.Element {
+interface ListItemProps extends Props { customStyles?: string }
+
+export default
+function ListItem({ customStyles, children }: ListItemProps): JSX.Element {
+  const className = customStyles
+    ? `${styles.listItem} ${customStyles}`
+    : `${styles.listItem}`;
+
   return (
-    <li className={styles.listItem}>
+    <li className={className}>
       {children}
     </li>
   );
 }
+
+ListItem.defaultProps = { customStyles: null };

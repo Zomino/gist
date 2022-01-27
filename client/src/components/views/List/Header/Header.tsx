@@ -1,7 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 
 // libraries
-import React from 'react';
 import { IoPencil } from 'react-icons/io5';
 // components
 import IconLink from '../../../containers/IconLink/IconLink';
