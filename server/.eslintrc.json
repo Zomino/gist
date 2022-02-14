@@ -19,7 +19,7 @@
         "max-len": [
             "warn",
             {
-                "code": 80
+                "code": 100
             }
         ],
         "@typescript-eslint/explicit-function-return-type": [

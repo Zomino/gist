@@ -1,26 +1,31 @@
-import type Game from '../../interfaces/Game';
-import type List from '../../interfaces';
+import { type Game, type List } from '../../interfaces';
 
-export function addApiData(games: Game[], apiGames: Game[]): Game[] {
+export function addAPIData(games: Game[], APIGames: Game[]): Game[] {
   return games.map((game: Game) => {
-    const apiData = apiGames
-      .find((apiGame: Game) => apiGame.appid === game.appid);
+    const APIData = APIGames.find((APIGame: Game) => APIGame.appid === game.appid);
 
     return {
       ...game,
-      name: apiData!.name,
-      img_logo_url: apiData!.img_logo_url,
+      name: APIData?.name,
+      img_logo_url: APIData?.img_logo_url,
     };
   });
 }
 
-export function validBody(body: List): boolean {
+export function checkRequestBody(body: List): boolean {
   if (
     !body.name
     || !body.games
     || !body.games.length
     || !Object.prototype.hasOwnProperty.call(body, 'ordered')
-  ) return false;
+  ) {
+    return false;
+  }
 
   return true;
 }
+
+export default {
+  addAPIData,
+  checkRequestBody,
+};

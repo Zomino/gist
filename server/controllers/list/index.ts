@@ -1,14 +1,14 @@
 import { type Request, type Response } from 'express';
-import type Game from '../../interfaces/Game';
+import { type Game } from '../../interfaces';
 import ListModel from '../../models/List';
-import { apiUserId } from '../../environment';
-import steam from '../../services/steamAPIService';
-import { addApiData, validBody } from './helper';
+import { APIUserID } from '../../environment';
+import steam from '../../services/steamAPI';
+import { addAPIData, checkRequestBody } from './helper';
 
 async function getLists(_: Request, res: Response): Promise<void> {
   try {
     const lists = await ListModel
-      .find({ steamid: apiUserId })
+      .find({ steamid: APIUserID })
       .lean();
 
     res
@@ -28,12 +28,13 @@ async function getListById(req: Request, res: Response): Promise<void> {
 
     const appids = list.games.map((game: Game) => game.appid);
 
-    const apiGames = await steam.getOwnedGamesById(appids);
+    const APIGames = await steam.getOwnedGamesById(appids);
 
-    list.games = addApiData(list.games, apiGames);
+    list.games = addAPIData(list.games, APIGames);
 
-    res.status(200);
-    res.send(list);
+    res
+      .status(200)
+      .send(list);
   } catch (err) {
     console.error(err);
     res.sendStatus(500);
@@ -42,8 +43,9 @@ async function getListById(req: Request, res: Response): Promise<void> {
 
 async function putList(req: Request, res: Response): Promise<void> {
   const { body } = req;
+  const validRequest = checkRequestBody(body);
 
-  if (!validBody(body)) {
+  if (!validRequest) {
     res.sendStatus(400);
     return;
   }
@@ -57,7 +59,7 @@ async function putList(req: Request, res: Response): Promise<void> {
     } = req.body;
 
     const update = {
-      steamid: apiUserId,
+      steamid: APIUserID,
       name,
       games,
       ordered,
