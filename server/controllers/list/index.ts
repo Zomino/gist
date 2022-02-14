@@ -2,7 +2,7 @@ import { type Request, type Response } from 'express';
 import type Game from '../../interfaces/Game';
 import ListModel from '../../models/List';
 import { apiUserId } from '../../environment';
-import steam from '../../steam';
+import steam from '../../services/steamAPIService';
 import { addApiData, validBody } from './helper';
 
 async function getLists(_: Request, res: Response): Promise<void> {

@@ -1,5 +1,5 @@
 import { type Request, type Response } from 'express';
-import steam from '../../steam';
+import steam from '../../services/steamAPIService';
 
 async function getGameData(_: Request, res: Response): Promise<void> {
   try {
