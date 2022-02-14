@@ -12,6 +12,9 @@
 
 .heading {
   text-align: center;
+  color: var(--steam-color-5);
+  font-size: var(--font-large);
+  font-weight: 400;
 }
 
 .heading:hover {

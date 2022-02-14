@@ -1,6 +1,4 @@
-// libraries
 import { Link } from 'react-router-dom';
-// styles
 import styles from './Banner.module.css';
 
 export default function Banner(): JSX.Element {

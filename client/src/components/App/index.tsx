@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Banner from '../features/Banner/Banner';
+import Banner from '../features/Banner';
 import MyListsView from '../views/MyLists/MyLists';
 import ListView from '../views/List/List';
 import ListEditor from '../views/ListEditor/ListEditor';
