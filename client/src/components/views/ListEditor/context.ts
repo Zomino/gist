@@ -7,11 +7,10 @@ import {
 } from 'react';
 // types
 import { type List } from '../../../interfaces';
-import { type Action, type Actions } from './state/types';
+import { type Action } from './state/types';
 
 interface ListEditorContext {
   list: List,
-  actions: Actions,
   gamePickerOpen: boolean,
   optionFormOpen: boolean,
   dispatch: (value: Action) => void,

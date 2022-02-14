@@ -1,0 +1,43 @@
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rankButtons {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+
+.rankButton {
+  color: var(--steam-color-3);
+  font-size: var(--font-medium);
+  list-style-type: none;
+}
+
+.rankButton:hover {
+  color: var(--steam-color-2);
+  cursor: pointer;
+}
+
+.gameName {
+  padding-left: 1rem;
+  flex-grow: 1;
+}
+
+.gameRank {
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.deleteButton {
+  color: var(--steam-color-3);
+  font-size: var(--font-medium);
+}
+
+.deleteButton:hover {
+  color: darkred;
+  cursor: pointer;
+}

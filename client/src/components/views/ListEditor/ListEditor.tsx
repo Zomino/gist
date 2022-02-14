@@ -18,6 +18,7 @@ import View from '../../containers/View/View';
 import Spinner from '../../features/Spinner/Spinner';
 import Header from './Header';
 import Toolbar from './Toolbar/Toolbar';
+import GameList from './GameList/GameList';
 import GamePicker from './GamePicker/GamePicker';
 // types
 import { type List } from '../../../interfaces';
@@ -46,7 +47,6 @@ export default function ListEditor(): JSX.Element {
 
   const value = useMemo(() => ({
     list,
-    actions,
     gamePickerOpen,
     optionFormOpen,
     dispatch,
@@ -73,6 +73,7 @@ export default function ListEditor(): JSX.Element {
       <View>
         <Header />
         <Toolbar />
+        <GameList />
         {gamePickerOpen ? <GamePicker /> : null}
       </View>
     </Context.Provider>

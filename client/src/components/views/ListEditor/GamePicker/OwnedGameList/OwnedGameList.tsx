@@ -6,6 +6,7 @@ import { IoCheckmark } from 'react-icons/io5';
 // services
 import apiService from '../../../../../apiService';
 import { useListEditorContext } from '../../context';
+import actions from '../../state/actions';
 // components
 import ListContainer from '../../../../containers/List/List';
 import ListItemContainer from '../../../../containers/ListItem/ListItem';
@@ -26,7 +27,7 @@ function ListItemClickableWrapper({
 }: ListItemProps): JSX.Element | null {
   const context = useListEditorContext();
   if (!context) return null;
-  const { dispatch, actions } = context;
+  const { dispatch } = context;
 
   const addGame = (): void => {
     dispatch(actions.addGame(game));

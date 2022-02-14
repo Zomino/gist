@@ -5,9 +5,7 @@ import styles from './Header.module.css';
 
 export default function Header(): JSX.Element | null {
   const context = useListEditorContext();
-
   if (!context) return null;
-
   const { setGamePickerOpen } = context;
 
   const closeGamePicker = (): void => {
