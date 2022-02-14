@@ -20,7 +20,7 @@ async function getLists(_: Request, res: Response): Promise<void> {
   }
 }
 
-async function getListById(req: Request, res: Response): Promise<void> {
+async function getListByID(req: Request, res: Response): Promise<void> {
   try {
     const [list] = await ListModel
       .find({ _id: req.params.id })
@@ -92,7 +92,7 @@ async function deleteList(req: Request, res: Response): Promise<void> {
 
 export default {
   getLists,
-  getListById,
+  getListByID,
   putList,
   deleteList,
 };
