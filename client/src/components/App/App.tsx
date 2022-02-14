@@ -1,15 +1,12 @@
-// libraries
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom';
-// components
 import Banner from '../features/Banner/Banner';
 import MyListsView from '../views/MyLists/MyLists';
 import ListView from '../views/List/List';
 import ListEditor from '../views/ListEditor/ListEditor';
-// styles
 import './App.module.css'; // global styles
 
 export default function App(): JSX.Element {
