@@ -39,7 +39,7 @@ export default function ListEditor(): JSX.Element {
   useEffect(() => {
     if (id) {
       (async () => {
-        const fetchedList = await APIService.getListById(id);
+        const fetchedList = await APIService.getListByID(id);
         dispatch(actions.setList(fetchedList));
       })();
     }

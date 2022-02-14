@@ -18,7 +18,7 @@ export default function ListView(): JSX.Element {
   useEffect(() => {
     (async () => {
       if (id) {
-        const fetchedList = await apiService.getListById(id);
+        const fetchedList = await apiService.getListByID(id);
         setList(fetchedList);
       }
     })();
