@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import game from './controllers/game';
-import list from './controllers/list';
+import game from '../controllers/game';
+import list from '../controllers/list';
 
 const router = Router();
 

@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import router from './router';
+import router from './middleware/router';
 import database from './models';
 import { serverPort as port } from './environment';
 
