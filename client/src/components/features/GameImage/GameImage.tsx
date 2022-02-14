@@ -1,5 +1,5 @@
 // services
-import apiService from '../../../apiService';
+import apiService from '../../../services/ServerAPI';
 // styles
 import styles from './GameImage.module.css';
 

@@ -1,7 +1,7 @@
 // libraries
 import { Fragment } from 'react';
 // services
-import apiService from '../../../../apiService';
+import apiService from '../../../../services/ServerAPI';
 // components
 import ListContainer from '../../../containers/List/List';
 import ListItemContainer from '../../../containers/ListItem/ListItem';

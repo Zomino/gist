@@ -4,7 +4,7 @@
 import { useState, useEffect, Fragment } from 'react';
 import { IoCheckmark } from 'react-icons/io5';
 // services
-import apiService from '../../../../../apiService';
+import apiService from '../../../../../services/ServerAPI';
 import { useListEditorContext } from '../../context';
 import actions from '../../state/actions';
 // components

@@ -1,16 +1,13 @@
-// libraries
 import axios from 'axios';
-// environment
-import { serverUrl } from './environment';
-// types
-import type { Game, List } from './interfaces';
+import { serverUrl } from '../environment';
+import type { Game, List } from '../interfaces';
 
 export async function getLists(): Promise<List[]> {
   const res = await axios.get(`${serverUrl}/lists`);
   return res.data;
 }
 
-export async function getListById(id: string): Promise<List> {
+export async function getListByID(id: string): Promise<List> {
   const res = await axios.get(`${serverUrl}/lists/${id}`);
   return res.data;
 }
@@ -29,7 +26,6 @@ export async function getOwnedGames(): Promise<Game[]> {
 }
 
 export function constructImageURL(appid: number, hash: string): string {
-  // eslint-disable-next-line max-len
   return `http://media.steampowered.com/steamcommunity/public/images/apps/${appid}/${hash}.jpg`;
 }
 
@@ -39,7 +35,7 @@ export function constructStoreURL(appid: number): string {
 
 const apiService = {
   getLists,
-  getListById,
+  getListByID,
   getOwnedGames,
   putList,
   deleteList,

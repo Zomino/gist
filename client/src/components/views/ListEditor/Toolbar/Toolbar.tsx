@@ -9,7 +9,7 @@ import {
   IoTrashBin,
 } from 'react-icons/io5';
 // services
-import apiService from '../../../../apiService';
+import apiService from '../../../../services/ServerAPI';
 import { useListEditorContext } from '../context';
 // components
 import Section from '../../../containers/Section/Section';

@@ -1,7 +1,7 @@
 // libraries
 import { useState, useEffect } from 'react';
 // services
-import apiService from '../../../apiService';
+import apiService from '../../../services/ServerAPI';
 // components
 import View from '../../containers/View/View';
 import Spinner from '../../features/Spinner/Spinner';

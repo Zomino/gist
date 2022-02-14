@@ -9,7 +9,7 @@ import {
 } from 'react';
 import { useParams } from 'react-router-dom';
 // services
-import APIService from '../../../apiService';
+import APIService from '../../../services/ServerAPI';
 import reducer from './state/reducer';
 import actions from './state/actions';
 import { ListEditorContext as Context } from './context';
