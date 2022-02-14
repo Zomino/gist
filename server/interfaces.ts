@@ -1,5 +1,5 @@
 /* eslint-disable semi */
-export default interface List {
+export interface List {
   _id?: string,
   name: string,
   steamid: number,
@@ -8,4 +8,10 @@ export default interface List {
     appid: number,
   }[],
   ordered: boolean
+}
+
+export interface Game {
+  appid: number,
+  name?: string,
+  img_logo_url?: string,
 }

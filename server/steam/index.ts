@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { apiKey, apiUserId } from '../environment';
 import { sortGames, cleanGames } from './helper';
-import type Game from '../interfaces/Game';
+import { type Game } from '../interfaces';
 
 const BASE_URL = 'http://api.steampowered.com';
 

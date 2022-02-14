@@ -1,5 +1,5 @@
 import type Game from '../../interfaces/Game';
-import type List from '../../interfaces/List';
+import type List from '../../interfaces';
 
 export function addApiData(games: Game[], apiGames: Game[]): Game[] {
   return games.map((game: Game) => {

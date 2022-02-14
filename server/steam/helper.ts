@@ -1,4 +1,4 @@
-import type Game from '../interfaces/Game';
+import { type Game } from '../interfaces';
 
 export function sortGames(games: Game[]): Game[] {
   return games.sort((a: Game, b: Game) => {
