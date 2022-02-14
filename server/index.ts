@@ -6,10 +6,9 @@ import { serverPort as port } from './environment';
 
 const app = express();
 
-app
-  .use(cors())
-  .use(express.json())
-  .use(router);
+app.use(cors());
+app.use(express.json());
+app.use(router);
 
 try {
   database.connect();
