@@ -18,6 +18,6 @@ const ListSchema = new Schema({
   },
 });
 
-const List = model('List', ListSchema, 'list');
+const ListModel = model('List', ListSchema, 'list');
 
-export default List;
+export default ListModel;
