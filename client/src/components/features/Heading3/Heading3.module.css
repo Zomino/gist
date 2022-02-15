@@ -1,4 +1,4 @@
-heading3 {
+.heading3 {
   font-weight: 600;
   color: var(--steam-color-3);
   font-size: var(--font-normal);
