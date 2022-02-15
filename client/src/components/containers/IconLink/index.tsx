@@ -1,8 +1,5 @@
-// libraries
 import { Link } from 'react-router-dom';
-// types
-import { type Props } from '../../../interfaces';
-// styles
+import { type Props } from 'components/interfaces';
 import styles from './IconLink.module.css';
 
 interface IconLinkProps extends Props { to: string }

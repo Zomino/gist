@@ -1,11 +1,9 @@
-// styles
 import styles from './Section.module.css';
-// types
-import { type Props } from '../../../interfaces';
+import { type Props } from '../../interfaces';
 
 export default function Section({ children }: Props): JSX.Element {
   return (
-    <div className={styles.sectionContainer}>
+    <div className={styles.section}>
       {children}
     </div>
   );

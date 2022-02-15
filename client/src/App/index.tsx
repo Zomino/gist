@@ -3,10 +3,10 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Banner from '../features/Banner';
-import MyListsView from '../views/MyLists/MyLists';
-import ListView from '../views/List/List';
-import ListEditor from '../views/ListEditor/ListEditor';
+import Banner from 'components/features/Banner';
+import MyListsView from 'components/views/MyLists';
+import ListView from 'components/views/List/List';
+import ListEditor from 'components/views/ListEditor/ListEditor';
 import './App.module.css'; // global styles
 
 export default function App(): JSX.Element {

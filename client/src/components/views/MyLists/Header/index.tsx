@@ -1,13 +1,12 @@
-// libraries
 import { IoIosAddCircle } from 'react-icons/io';
-// components
-import Section from '../../../containers/Section/Section';
-import IconLink from '../../../containers/IconLink/IconLink';
+import Section from 'components/containers/Section';
+import IconLink from 'components/containers/IconLink';
+import Heading2 from 'components/features/Heading2';
 
 export default function Header(): JSX.Element {
   return (
     <Section>
-      <h2>My Lists</h2>
+      <Heading2 text="My Lists" />
       <IconLink to="/listeditor">
         <IoIosAddCircle />
       </IconLink>

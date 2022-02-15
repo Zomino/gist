@@ -1,0 +1,5 @@
+heading2 {
+  color: var(--steam-color-5);
+  font-size: var(--font-large);
+  font-weight: 600;
+}

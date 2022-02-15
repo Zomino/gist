@@ -1,4 +1,4 @@
-import { type Props } from '../../../interfaces';
+import { type Props } from 'components/interfaces';
 
 interface ListProps extends Props { ordered: boolean }
 

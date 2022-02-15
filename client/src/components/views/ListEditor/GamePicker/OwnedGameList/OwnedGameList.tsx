@@ -4,15 +4,16 @@
 import { useState, useEffect, Fragment } from 'react';
 import { IoCheckmark } from 'react-icons/io5';
 // services
+import { type Props } from 'components/interfaces';
+import { type Game } from 'interfaces';
 import apiService from '../../../../../services/ServerAPI';
 import { useListEditorContext } from '../../context';
 import actions from '../../state/actions';
 // components
-import ListContainer from '../../../../containers/List/List';
-import ListItemContainer from '../../../../containers/ListItem/ListItem';
+import ListContainer from '../../../../containers/List';
+import ListItemContainer from '../../../../containers/ListItem';
 import GameImage from '../../../../features/GameImage/GameImage';
 // types
-import { type Game, type Props } from '../../../../../interfaces';
 // styles
 import styles from './OwnedGameList.module.css';
 

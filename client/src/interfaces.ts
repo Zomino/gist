@@ -1,7 +1,3 @@
-/* eslint-disable semi */
-
-import { ReactNode } from 'react';
-
 export interface Game {
   appid: number,
   name: string,
@@ -14,8 +10,4 @@ export interface List {
   name: string,
   games: Game[],
   ordered: boolean,
-}
-
-export interface Props {
-  children?: ReactNode
 }

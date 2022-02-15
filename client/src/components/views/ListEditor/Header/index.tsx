@@ -1,5 +1,5 @@
 // components
-import Section from '../../../containers/Section/Section';
+import Section from '../../../containers/Section';
 
 export default function Header(): JSX.Element {
   return (

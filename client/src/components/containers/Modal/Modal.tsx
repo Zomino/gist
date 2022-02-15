@@ -3,7 +3,7 @@
 // libraries
 import { IoIosCloseCircle } from 'react-icons/io';
 // types
-import { type Props } from '../../../interfaces';
+import { type Props } from '../../interfaces';
 // styles
 import styles from './Modal.module.css';
 

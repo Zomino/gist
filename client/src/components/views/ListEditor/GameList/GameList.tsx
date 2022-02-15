@@ -5,8 +5,8 @@ import { IoCaretUp, IoTrashBin } from 'react-icons/io5';
 import { useListEditorContext } from '../context';
 import actions from '../state/actions';
 // components
-import ListContainer from '../../../containers/List/List';
-import ListItem from '../../../containers/ListItem/ListItem';
+import ListContainer from '../../../containers/List';
+import ListItem from '../../../containers/ListItem';
 import GameImage from '../../../features/GameImage/GameImage';
 // styles
 import styles from './GameList.module.css';

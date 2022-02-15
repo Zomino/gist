@@ -3,8 +3,8 @@
 // libraries
 import { IoPencil } from 'react-icons/io5';
 // components
-import IconLink from '../../../containers/IconLink/IconLink';
-import Section from '../../../containers/Section/Section';
+import IconLink from '../../../containers/IconLink';
+import Section from '../../../containers/Section';
 // types
 import { type List } from '../../../../interfaces';
 

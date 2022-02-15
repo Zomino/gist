@@ -1,13 +1,14 @@
 // libraries
 import { Fragment } from 'react';
 // services
-import apiService from '../../../../services/ServerAPI';
+import { type Props } from 'components/interfaces';
+import { type List, type Game } from 'interfaces';
 // components
-import ListContainer from '../../../containers/List/List';
-import ListItemContainer from '../../../containers/ListItem/ListItem';
+import ListContainer from '../../../containers/List';
+import ListItemContainer from '../../../containers/ListItem';
 import GameImage from '../../../features/GameImage/GameImage';
 // types
-import { type List, type Game, type Props } from '../../../../interfaces';
+import apiService from '../../../../services/ServerAPI';
 // styles
 import styles from './GameList.module.css';
 

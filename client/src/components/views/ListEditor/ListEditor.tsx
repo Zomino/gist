@@ -14,8 +14,8 @@ import reducer from './state/reducer';
 import actions from './state/actions';
 import { ListEditorContext as Context } from './context';
 // components
-import View from '../../containers/View/View';
-import Spinner from '../../features/Spinner/Spinner';
+import View from '../../containers/View';
+import Spinner from '../../features/Spinner';
 import Header from './Header';
 import Toolbar from './Toolbar/Toolbar';
 import GameList from './GameList/GameList';

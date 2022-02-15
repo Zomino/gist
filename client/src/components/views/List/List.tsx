@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom';
 // services
 import apiService from '../../../services/ServerAPI';
 // components
-import View from '../../containers/View/View';
-import Spinner from '../../features/Spinner/Spinner';
+import View from '../../containers/View';
+import Spinner from '../../features/Spinner';
 import Header from './Header/Header';
 import GameList from './GameList/GameList';
 // types
