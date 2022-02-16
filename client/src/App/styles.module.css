@@ -22,8 +22,3 @@
 body {
   background-color: var(--steam-color-3);
 }
-
-h4 {
-  color: var(--steam-color-1);
-  font-size: var(--font-normal);
-}

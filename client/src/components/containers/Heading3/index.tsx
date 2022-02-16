@@ -1,6 +1,14 @@
 import { type Props } from 'components/interfaces';
-import styles from './styles.module.css';
+import defaultStyles from './styles.module.css';
 
-export default function Heading3({ children }: Props): JSX.Element {
-  return <h3 className={styles.heading3}>{children}</h3>;
+interface Heading3Props extends Props { customStyles?: string }
+
+export default function Heading3({ customStyles, children }: Heading3Props): JSX.Element {
+  const styles = customStyles
+    ? `${defaultStyles.heading3} ${customStyles}`
+    : `${defaultStyles.heading3}`;
+
+  return <h3 className={styles}>{children}</h3>;
 }
+
+Heading3.defaultProps = { customStyles: null };

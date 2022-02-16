@@ -10,19 +10,19 @@
   font-weight: 500;
 }
 
-.iconLinks {
+.iconButtons {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.toolButton {
+.iconButton {
   display: inline;
   margin-left: .5rem;
   color: var(--steam-color-5);
   font-size: var(--font-large);
 }
 
-.toolButton:hover {
+.iconButton:hover {
   cursor: pointer;
   color: white;
 }

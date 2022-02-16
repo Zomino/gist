@@ -1,16 +1,10 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-
-// libraries
 import { IoIosCloseCircle } from 'react-icons/io';
-// types
 import { type Props } from '../../interfaces';
-// styles
 import styles from './styles.module.css';
 
 interface ModalProps extends Props { closeModal: () => void }
 
-export default
-function Modal({ closeModal, children }: ModalProps): JSX.Element {
+export default function Modal({ closeModal, children }: ModalProps): JSX.Element {
   return (
     <>
       <div

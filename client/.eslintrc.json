@@ -22,12 +22,13 @@
         "react-hooks"
     ],
     "rules": {
+        "jsx-a11y/no-static-element-interactions": "off",
         "no-param-reassign": "off",
         "no-underscore-dangle": "off",
         "import/no-unresolved": "off",
         "react/react-in-jsx-scope": "off",
         "no-shadow": "off",
-        "@typescript-eslint/no-shadow": ["error"],
+        "@typescript-eslint/no-shadow": "off",
         "react/jsx-filename-extension": ["warn", {"extensions": [".tsx"]}],
         "import/extensions": "off",
         "@typescript-eslint/explicit-function-return-type": [
@@ -36,7 +37,7 @@
                 "allowExpressions": true
             }
         ],
-        "max-len": ["warn", {"code": 100}],
+        "max-len": ["warn", {"code": 120}],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "import/prefer-default-export": "off",

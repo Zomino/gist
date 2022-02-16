@@ -1,12 +1,10 @@
-// libraries
 import {
   createContext,
   useContext,
   type Dispatch,
   type SetStateAction,
 } from 'react';
-// types
-import { type List } from '../../../interfaces';
+import { type List } from 'interfaces';
 import { type Action } from './state/types';
 
 interface ListEditorContext {

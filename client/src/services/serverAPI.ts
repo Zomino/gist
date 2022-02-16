@@ -1,14 +1,9 @@
 import axios from 'axios';
-import { serverUrl } from '../environment';
-import type { Game, List } from '../interfaces';
+import { type Game, type List } from 'interfaces';
+import { serverUrl } from 'environment';
 
 export async function getLists(): Promise<List[]> {
   const res = await axios.get(`${serverUrl}/lists`);
-  return res.data;
-}
-
-export async function getListByID(id: string): Promise<List> {
-  const res = await axios.get(`${serverUrl}/lists/${id}`);
   return res.data;
 }
 
@@ -27,7 +22,6 @@ export async function getOwnedGames(): Promise<Game[]> {
 
 export default {
   getLists,
-  getListByID,
   getOwnedGames,
   putList,
   deleteList,

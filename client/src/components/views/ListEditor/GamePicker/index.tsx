@@ -1,9 +1,7 @@
-// services
+import Modal from 'components/containers/Modal';
+import Header from './Header';
+import OwnedGameList from './OwnedGameList';
 import { useListEditorContext } from '../context';
-// components
-import Modal from '../../../containers/Modal';
-import Header from './Header/Header';
-import OwnedGameList from './OwnedGameList/OwnedGameList';
 
 export default function GamePicker(): JSX.Element | null {
   const context = useListEditorContext();

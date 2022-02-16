@@ -1,10 +1,18 @@
-import styles from './styles.module.css';
-import { type Props } from '../../interfaces';
+import { type Props } from 'components/interfaces';
+import defaultStyles from './styles.module.css';
 
-export default function Section({ children }: Props): JSX.Element {
+interface SectionProps extends Props { customStyles?: string }
+
+export default function Section({ customStyles, children }: SectionProps): JSX.Element {
+  const styles = customStyles
+    ? `${defaultStyles.section} ${customStyles}`
+    : `${defaultStyles.section}`;
+
   return (
-    <div className={styles.section}>
+    <div className={styles}>
       {children}
     </div>
   );
 }
+
+Section.defaultProps = { customStyles: null };

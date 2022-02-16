@@ -1,4 +1,4 @@
-import { type List, type Game } from '../../../../interfaces';
+import { type List, type Game } from 'interfaces';
 
 export enum ActionType {
   setList,
@@ -10,7 +10,7 @@ export enum ActionType {
 }
 
 export interface Payload {
-  fetchedList?: List,
+  storeList?: List,
   rank?: number,
   appid?: number,
   game?: Game,

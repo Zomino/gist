@@ -1,10 +1,10 @@
-import { type List, type Game } from '../../../../interfaces';
+import { type List, type Game } from 'interfaces';
 import { ActionType, type Action } from './types';
 
-export function setList(fetchedList: List): Action {
+export function setList(storeList: List): Action {
   return {
     type: ActionType.setList,
-    payload: { fetchedList },
+    payload: { storeList },
   };
 }
 

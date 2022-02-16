@@ -1,0 +1,10 @@
+.header {
+  padding: 1rem 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  color: var(--steam-color-5);
+  font-size: var(--font-medium);
+}

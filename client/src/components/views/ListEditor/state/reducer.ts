@@ -1,4 +1,5 @@
-// services
+import { type List } from 'interfaces';
+import { ActionType, type Action } from './types';
 import {
   setList,
   incrementRank,
@@ -7,15 +8,12 @@ import {
   addGame,
   saveOptions,
 } from './handlers';
-// types
-import { type List } from '../../../../interfaces';
-import { ActionType, type Action } from './types';
 
 export default function reducer(list: List, action: Action): List {
   switch (action.type) {
     case ActionType.setList: {
-      const { fetchedList } = action.payload;
-      if (fetchedList) return setList(list, fetchedList);
+      const { storeList } = action.payload;
+      if (storeList) return setList(list, storeList);
       break;
     }
     case ActionType.incrementRank: {
@@ -25,7 +23,7 @@ export default function reducer(list: List, action: Action): List {
     }
     case ActionType.decrementRank: {
       const { rank } = action.payload;
-      if (rank) return decrementRank(list, rank);
+      if (typeof rank === 'number') return decrementRank(list, rank);
       break;
     }
     case ActionType.removeGame: {

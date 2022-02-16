@@ -1,0 +1,42 @@
+.containerOuter {
+  background-color: var(--steam-color-3);
+  border-radius: 10px;;
+  padding: 10px;
+}
+
+.containerInner {
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: var(--steam-color-3);
+  border-radius: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.containerInner::-webkit-scrollbar {
+  display: none;
+}
+
+.gameName {
+  padding-left: 1rem;
+}
+
+.added {
+  color: green;
+  font-size: var(--font-medium);
+}
+
+.allowed:hover {
+  cursor: pointer;
+}
+
+.notAllowed:hover {
+  cursor: not-allowed;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
