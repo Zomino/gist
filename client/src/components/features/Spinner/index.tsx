@@ -1,5 +1,5 @@
 import { Oval } from 'react-loader-spinner';
-import styles from './Spinner.module.css';
+import styles from './styles.module.css';
 
 export default function Spinner(): JSX.Element {
   return (

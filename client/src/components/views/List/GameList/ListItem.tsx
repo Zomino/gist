@@ -1,9 +1,9 @@
 import { type Game } from 'interfaces';
 import ListItemContainer from 'components/containers/ListItem';
-import GameImage from 'components/features/GameImage/GameImage';
+import GameImage from 'components/features/GameImage';
 import SteamLink from './SteamLink';
 import GameInfo from './GameInfo';
-import styles from './GameList.module.css';
+import styles from './styles.module.css';
 
 interface ListItemProps {
   game: Game,

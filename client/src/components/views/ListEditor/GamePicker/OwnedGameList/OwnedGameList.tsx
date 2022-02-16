@@ -12,7 +12,7 @@ import actions from '../../state/actions';
 // components
 import ListContainer from '../../../../containers/List';
 import ListItemContainer from '../../../../containers/ListItem';
-import GameImage from '../../../../features/GameImage/GameImage';
+import GameImage from '../../../../features/GameImage';
 // types
 // styles
 import styles from './OwnedGameList.module.css';

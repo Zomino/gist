@@ -1,7 +1,7 @@
 // services
 import { useListEditorContext } from '../context';
 // components
-import Modal from '../../../containers/Modal/Modal';
+import Modal from '../../../containers/Modal';
 import Header from './Header/Header';
 import OwnedGameList from './OwnedGameList/OwnedGameList';
 

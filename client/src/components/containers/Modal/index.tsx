@@ -5,7 +5,7 @@ import { IoIosCloseCircle } from 'react-icons/io';
 // types
 import { type Props } from '../../interfaces';
 // styles
-import styles from './Modal.module.css';
+import styles from './styles.module.css';
 
 interface ModalProps extends Props { closeModal: () => void }
 

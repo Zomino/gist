@@ -1,4 +1,4 @@
-import styles from './GameList.module.css';
+import styles from './styles.module.css';
 
 interface GameRankProps { index: number }
 

@@ -1,5 +1,5 @@
 import { constructImageURL } from 'services/steamFunctions';
-import styles from './GameImage.module.css';
+import styles from './styles.module.css';
 
 interface GameImageProps {
   appid: number,

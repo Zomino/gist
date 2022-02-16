@@ -1,5 +1,5 @@
 import { type Props } from 'components/interfaces';
-import defaultStyles from './ListItem.module.css';
+import defaultStyles from './styles.module.css';
 
 interface ListItemProps extends Props { customStyles?: string }
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { type Props } from 'components/interfaces';
-import styles from './IconLink.module.css';
+import styles from './styles.module.css';
 
 interface IconLinkProps extends Props { to: string }
 

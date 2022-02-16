@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from './Banner.module.css';
+import styles from './styles.module.css';
 
 export default function Banner(): JSX.Element {
   return (

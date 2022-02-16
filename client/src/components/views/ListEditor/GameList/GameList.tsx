@@ -7,7 +7,7 @@ import actions from '../state/actions';
 // components
 import ListContainer from '../../../containers/List';
 import ListItem from '../../../containers/ListItem';
-import GameImage from '../../../features/GameImage/GameImage';
+import GameImage from '../../../features/GameImage';
 // styles
 import styles from './GameList.module.css';
 

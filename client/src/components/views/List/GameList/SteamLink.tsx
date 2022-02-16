@@ -1,6 +1,6 @@
 import { type Props } from 'components/interfaces';
 import { constructStoreURL } from 'services/steamFunctions';
-import styles from './GameList.module.css';
+import styles from './styles.module.css';
 
 interface SteamLinkProps extends Props { appid: number }
 

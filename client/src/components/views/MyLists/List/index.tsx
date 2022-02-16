@@ -4,7 +4,7 @@ import { type List as ListType } from 'interfaces';
 import ListContainer from 'components/containers/List';
 import ListItem from 'components/containers/ListItem';
 import Heading3 from 'components/containers/Heading3';
-import styles from './List.module.css';
+import styles from './styles.module.css';
 
 interface Props { lists: ListType[] }
 

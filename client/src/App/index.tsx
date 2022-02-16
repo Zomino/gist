@@ -7,7 +7,7 @@ import Banner from 'components/features/Banner';
 import MyListsView from 'components/views/MyLists';
 import ListView from 'components/views/List';
 import ListEditor from 'components/views/ListEditor/ListEditor';
-import './App.module.css'; // global styles
+import './styles.module.css'; // global styles
 
 export default function App(): JSX.Element {
   return (
