@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  font-weight: 600;
+  color: var(--steam-color-5);
+  font-size: var(--font-normal);
+}

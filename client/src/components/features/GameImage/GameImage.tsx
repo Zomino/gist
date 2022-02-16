@@ -1,16 +1,13 @@
-// services
-import apiService from '../../../services/ServerAPI';
-// styles
+import { constructImageURL } from 'services/steamFunctions';
 import styles from './GameImage.module.css';
 
 interface GameImageProps {
   appid: number,
-  hash: string
+  hash: string,
 }
 
-export default
-function GameImage({ appid, hash }: GameImageProps): JSX.Element {
-  const url = apiService.constructImageURL(appid, hash);
+export default function GameImage({ appid, hash }: GameImageProps): JSX.Element {
+  const url = constructImageURL(appid, hash);
 
   return (
     <div

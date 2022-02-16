@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { type List } from 'interfaces';
 import { type RootState } from 'state/store';
-import ServerAPI from 'services/ServerAPI';
+import serverAPI from 'services/serverAPI';
 
 export enum Status {
   idle,
@@ -10,27 +10,27 @@ export enum Status {
   failed,
 }
 
-interface MyListsState {
+interface ListsState {
   lists: List[],
   status: Status
   error?: string,
 }
 
-const initialState: MyListsState = {
+const initialState: ListsState = {
   lists: [],
   status: Status.idle,
 };
 
 export const fetchLists = createAsyncThunk(
-  'myLists/fetchLists',
+  'lists/fetchLists',
   async () => {
-    const lists = await ServerAPI.getLists();
+    const lists = await serverAPI.getLists();
     return lists;
   },
 );
 
-export const myListsSlice = createSlice({
-  name: 'myLists',
+export const listsSlice = createSlice({
+  name: 'lists',
   initialState,
   reducers: {
     setLists: (state, action) => {
@@ -54,12 +54,12 @@ export const myListsSlice = createSlice({
   },
 });
 
-const { setLists, resetState } = myListsSlice.actions;
+const { setLists, resetState } = listsSlice.actions;
 export const actions = {
   setLists,
   resetState,
 };
 
-export const selectLists = (state: RootState): List[] => state.myLists.lists;
+export const selectLists = (state: RootState): List[] => state.listsState.lists;
 
-export default myListsSlice.reducer;
+export default listsSlice.reducer;

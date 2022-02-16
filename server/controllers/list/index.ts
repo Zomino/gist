@@ -1,40 +1,24 @@
 import { type Request, type Response } from 'express';
-import { type Game } from '../../interfaces';
+import { type List } from '../../interfaces';
 import ListModel from '../../models/List';
 import { APIUserID } from '../../environment';
 import steam from '../../services/steamAPI';
-import { addAPIData, checkRequestBody } from './helper';
+import { getAllAppIDs, addAPIData, checkRequestBody } from './helper';
 
 async function getLists(_: Request, res: Response): Promise<void> {
   try {
-    const lists = await ListModel
+    const lists: List[] = await ListModel
       .find({ steamid: APIUserID })
       .lean();
+
+    const appids = getAllAppIDs(lists);
+
+    const APIGames = await steam.getOwnedGamesById(appids);
+    addAPIData(lists, APIGames);
 
     res
       .status(200)
       .send(lists);
-  } catch (err) {
-    console.error(err);
-    res.sendStatus(500);
-  }
-}
-
-async function getListByID(req: Request, res: Response): Promise<void> {
-  try {
-    const [list] = await ListModel
-      .find({ _id: req.params.id })
-      .lean();
-
-    const appids = list.games.map((game: Game) => game.appid);
-
-    const APIGames = await steam.getOwnedGamesById(appids);
-
-    list.games = addAPIData(list.games, APIGames);
-
-    res
-      .status(200)
-      .send(list);
   } catch (err) {
     console.error(err);
     res.sendStatus(500);
@@ -92,7 +76,6 @@ async function deleteList(req: Request, res: Response): Promise<void> {
 
 export default {
   getLists,
-  getListByID,
   putList,
   deleteList,
 };

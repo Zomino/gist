@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import Banner from 'components/features/Banner';
 import MyListsView from 'components/views/MyLists';
-import ListView from 'components/views/List/List';
+import ListView from 'components/views/List';
 import ListEditor from 'components/views/ListEditor/ListEditor';
 import './App.module.css'; // global styles
 

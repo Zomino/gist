@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import myListsReducer from 'components/views/MyLists/slice';
+import listsReducer from 'state/slices/lists';
 
 export const store = configureStore({
   reducer: {
-    myLists: myListsReducer,
+    listsState: listsReducer,
   },
 });
 

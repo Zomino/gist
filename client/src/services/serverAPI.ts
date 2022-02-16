@@ -25,20 +25,10 @@ export async function getOwnedGames(): Promise<Game[]> {
   return res.data;
 }
 
-export function constructImageURL(appid: number, hash: string): string {
-  return `http://media.steampowered.com/steamcommunity/public/images/apps/${appid}/${hash}.jpg`;
-}
-
-export function constructStoreURL(appid: number): string {
-  return `https://store.steampowered.com/agecheck/app/${appid}/`;
-}
-
 export default {
   getLists,
   getListByID,
   getOwnedGames,
   putList,
   deleteList,
-  constructImageURL,
-  constructStoreURL,
 };

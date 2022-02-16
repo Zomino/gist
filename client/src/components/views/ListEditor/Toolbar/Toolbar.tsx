@@ -10,7 +10,7 @@ import {
 } from 'react-icons/io5';
 // services
 import { type Props } from 'components/interfaces';
-import apiService from '../../../../services/ServerAPI';
+import apiService from '../../../../services/serverAPI';
 import { useListEditorContext } from '../context';
 // components
 import Section from '../../../containers/Section';

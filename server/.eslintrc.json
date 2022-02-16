@@ -15,6 +15,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "no-param-reassign": "off",
         "no-console": "off",
         "max-len": [
             "warn",
