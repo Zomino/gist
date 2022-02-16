@@ -15,6 +15,7 @@ import Header from './Header';
 import GameList from './GameList';
 import Toolbar from './Toolbar';
 import GamePicker from './GamePicker';
+import OptionForm from './OptionForm';
 import reducer from './state/reducer';
 import actions from './state/actions';
 import { ListEditorContext as Context } from './context';
@@ -93,6 +94,7 @@ export default function ListEditor(): JSX.Element {
         <Toolbar />
         <GameList />
         {gamePickerOpen ? <GamePicker /> : null}
+        {optionFormOpen ? <OptionForm /> : null}
       </View>
     </Context.Provider>
   );

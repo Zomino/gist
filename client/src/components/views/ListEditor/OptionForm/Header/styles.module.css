@@ -1,0 +1,5 @@
+.heading {
+  color: var(--steam-color-5);
+  font-size: var(--font-medium);
+  margin: auto;
+}

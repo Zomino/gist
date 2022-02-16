@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  color: var(--steam-color-5);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.input {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  height: 2.5rem;
+  width: 80%;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.checkbox {
+  display: block;
+  margin: 1rem auto 0;
+}
+
+.saveButton {
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--steam-color-5);
+  color: var(--steam-color-3);
+  font-weight: 600;
+}
+
+.saveButton:hover {
+  background-color: var(--steam-color-2);
+  cursor: pointer;
+}
