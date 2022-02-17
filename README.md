@@ -83,3 +83,19 @@ npm install
 ```bash
 npm start
 ```
+
+## Built with
+
+- <img width="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /> [TypeScript](https://www.typescriptlang.org/) for better tooling and code predictability.
+- <img width="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> [React](https://reactjs.org/) with [React-Router](https://v5.reactrouter.com/) for the front end user interface design.
+- <img width="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" /> [Redux](https://redux.js.org/) with [Redux Toolkit](https://redux-toolkit.js.org/) for global data storage and state management on the front end.
+- <img width="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" /> [Express](https://expressjs.com/) for the back end server.
+- <img width="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" /> [MongoDB](https://www.mongodb.com/) with [Mongoose](https://mongoosejs.com/) ORM for data modelling and storage on the back end.
+- <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ESLint_logo.svg" /> [ESLint](https://eslint.org/) for cleaner and more consistent code.
+- <img width="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" /> [Figma](https://www.figma.com/) for UI mock-ups.
+- <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" /> [Steam API](https://steamcommunity.com/dev) for game data.
+
+## Author
+
+Zou Minowa - <img width="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> [GitHub](https://github.com/Zomino) - <img width="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> [LinkedIn](https://www.linkedin.com/in/zouminowa/)
+
